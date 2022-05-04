@@ -511,8 +511,8 @@ function PrayTimes(method) {
 	// return sun angle for sunset/sunrise
 	riseSetAngle: function() {
 		if (elv < 0) elv = 0 ;
-		var earthRad = 6371009; // in meters
-		var angle = DMath.arccos(earthRad/(earthRad+ elv));
+	//bel	var earthRad = 6371009; // in meters
+	//bel	var angle = DMath.arccos(earthRad/(earthRad+ elv));
 	
 		var angle = 0.0347* Math.sqrt(elv); // an approximation
 		return 0.833+ angle;
