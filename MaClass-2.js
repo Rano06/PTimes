@@ -107,7 +107,7 @@ function PrayTimes(method) {
 			params: { fajr: 15, isha: 15 } },
 		
 		CTIR: {
-			name: 'ISNA & UOIF',
+			name: 'CTIR',
 			params: { fajr: 14.5, isha: 13.5 } },
 			
 		ISNA_UOIF: {
