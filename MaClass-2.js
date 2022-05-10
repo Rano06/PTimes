@@ -160,7 +160,7 @@ function PrayTimes(method) {
 			name: 'Sobh Saddiq et Shafaq Abyad @ Equator',
 			params: { fajr: '75 min', isha: '75 min' } },				
 			
-        MCW: {
+        	MCW: {
 			name: 'MoonSighting Committee Worldwide, Khalid Shaukat',
 			params: { fajr: 13, isha: 10 } },							
 	
