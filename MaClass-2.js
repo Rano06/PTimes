@@ -105,6 +105,10 @@ function PrayTimes(method) {
 		ISNA: {
 			name: 'Islamic Society of North America (ISNA)',
 			params: { fajr: 15, isha: 15 } },
+		
+		CTIR: {
+			name: 'ISNA & UOIF',
+			params: { fajr: 14.6, isha: 13.7 } },
 			
 		ISNA_UOIF: {
 			name: 'ISNA & UOIF',
@@ -114,7 +118,7 @@ function PrayTimes(method) {
 			name: 'French Islamic Organization Union',
 			params: { fajr: 12, isha: 12 } },
 
-        GenShafaq: {
+        	GenShafaq: {
 			name: 'MoonSighting Committee Worldwide, Khalid Shaukat',
 			params: { fajr: '0 min', isha: '0 min' } },				
 			
@@ -131,7 +135,7 @@ function PrayTimes(method) {
 			params: { fajr: 0, isha: 0 } },		
 			
 			
-        GenShafaqq: {
+           	GenShafaqq: {
 			name: 'MoonSighting Committee Worldwide, Khalid Shaukat',
 			params: {  } },				
 			
@@ -515,7 +519,7 @@ function PrayTimes(method) {
 		var earthRad = 6371009; 			// in meters
 		var angle = DMath.arccos(earthRad/(earthRad+ elv));
 	
-        //bel   var angle = 0.0347* Math.sqrt(elv); 		// an approximation (.0321)
+        //bel   var angle = 0.0347* Math.sqrt(elv); 		// an approximation (321)
 		return 0.833+ angle;
 	},
 
