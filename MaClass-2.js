@@ -578,7 +578,7 @@ function PrayTimes(method) {
 			portion = 1/60* angle;
 		
                 if (method == 'CosLat')
-			portion = angle * Math.cos(Lat);		
+			portion = DMath.cos(lat)* angle;		
 		
 		if (method == 'OneSeventh')
 			portion = 1/7;
