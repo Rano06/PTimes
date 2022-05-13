@@ -109,6 +109,10 @@ function PrayTimes(method) {
 		CTIR: {
 			name: 'CTIR',
 			params: { fajr: 14.5, isha: 13.5 } },
+		
+		BelCosLat: {
+			name: 'BelCosLat',
+			params: { fajr: 18, isha: 17 } },
 			
 		ISNA_UOIF: {
 			name: 'ISNA & UOIF',
@@ -569,9 +573,13 @@ function PrayTimes(method) {
 	// the night portion used for adjusting times in higher latitudes
 	nightPortion: function(angle, night) {
 		var method = setting.highLats;
-		var portion = 1/2 // MidNight
+		var portion = 1/2 		// MidNight
 		if (method == 'AngleBased')
 			portion = 1/60* angle;
+		
+                if (method == 'CosLat')
+			portion = angle * Math.cos(Lat);		
+		
 		if (method == 'OneSeventh')
 			portion = 1/7;
 		if (method == 'OneSixth')
