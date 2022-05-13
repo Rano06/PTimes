@@ -314,7 +314,14 @@ function PrayTimes(method) {
 			offset[i] = timeOffsets[i];
 	},
 
+		
+		
 
+// alert ("Decl :"+decl);
+		
+	// get current Sun Declination
+	getDeclination: function() { return declination; },		
+		
 	// get current calculation method
 	getMethod: function() { return calcMethod; },
 
