@@ -318,7 +318,7 @@ function PrayTimes(method) {
 		
 /*		
 	// get current Sun Declination
-	getDeclination: function() { return declination; },	
+//	getDeclination: function() { return declination; },	
 		
 //    alert ("Decl :"+decl);		
 */		
