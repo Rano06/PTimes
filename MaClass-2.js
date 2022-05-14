@@ -316,12 +316,12 @@ function PrayTimes(method) {
 
 		
 		
-		
+/*		
 	// get current Sun Declination
 	getDeclination: function() { return declination; },	
 		
- alert ("Decl :"+decl);		
-		
+//    alert ("Decl :"+decl);		
+*/		
 	// get current calculation method
 	getMethod: function() { return calcMethod; },
 
