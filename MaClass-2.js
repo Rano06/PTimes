@@ -445,21 +445,21 @@ function PrayTimes(method) {
 		var imsak   = this.sunAngleTime(this.eval(params.imsak), times.imsak, 'ccw');
 		var fajr    = this.sunAngleTime(this.eval(params.fajr), times.fajr, 'ccw');
 		var sunrise = this.sunAngleTime(this.riseSetAngle(), times.sunrise, 'ccw');
-		
+/*		
 	var sunrise0 = this.sunAngleTime(0.833, times.sunrise, 'ccw');	
 	var DeltaSunRise = sunrise0 - sunrise
 	fajr = fajr - DeltaSunRise
-	
+*/	
 		var dhuhr   = this.midDay(times.dhuhr);
 		var asr     = this.asrTime(this.asrFactor(params.asr), times.asr);
 		var sunset  = this.sunAngleTime(this.riseSetAngle(), times.sunset);;
 		var maghrib = this.sunAngleTime(this.eval(params.maghrib), times.maghrib);
 		var isha    = this.sunAngleTime(this.eval(params.isha), times.isha);
-	
+/*	
 	var sunset0  = this.sunAngleTime(0.833, times.sunset);
 	var DeltaSunSet = sunset - sunset0
 	isha = isha + DeltaSunSet	
-
+*/
 		return {
 			imsak: imsak, fajr: fajr, sunrise: sunrise, dhuhr: dhuhr,
 			asr: asr, sunset: sunset, maghrib: maghrib, isha: isha
