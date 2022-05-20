@@ -455,7 +455,7 @@ function PrayTimes(method) {
 		var sunset  = this.sunAngleTime(this.riseSetAngle(), times.sunset);;
 		var maghrib = this.sunAngleTime(this.eval(params.maghrib), times.maghrib);
 		var isha    = this.sunAngleTime(this.eval(params.isha), times.isha);
-/bel	
+//bel	
 	var sunset0  = this.sunAngleTime(0.833, times.sunset);
 	var DeltaSunSet = sunset - sunset0
 	isha = isha + DeltaSunSet	
