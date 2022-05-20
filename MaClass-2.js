@@ -583,10 +583,10 @@ function PrayTimes(method) {
 		var portion = 1/2 		// MidNight
 		if (method == 'AngleBased')
 			portion = 1/60* angle;
-/*		
+/*/		
                 if (method == 'CosLat')
 			portion = DMath.cos(lat)* angle;		
-*/		
+/*/		
 		if (method == 'OneSeventh')
 			portion = 1/7;
 		if (method == 'OneSixth')
