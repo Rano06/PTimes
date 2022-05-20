@@ -502,10 +502,10 @@ function PrayTimes(method) {
 
 		if (this.isMin(params.imsak))
 			times.imsak = times.fajr- this.eval(params.imsak)/ 60;
-//bel			
+/* //bel			
         if (this.isMin(params.fajr))
 	        times.fajr = times.sunrise - this.eval(params.fajr)/ 60;
-//bel			
+//bel	*/		
 		if (this.isMin(params.maghrib))
 			times.maghrib = times.sunset+ this.eval(params.maghrib)/ 60;
 		if (this.isMin(params.isha))
