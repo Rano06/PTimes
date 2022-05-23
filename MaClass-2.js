@@ -597,6 +597,8 @@ function PrayTimes(method) {
 			portion = 1/6;	
 		if (method == 'OneFiveth')
 			portion = 1/5;	
+		if (method == 'OneThirdth')
+			portion = 1/3;	
 		return portion* night;
 	},
 
