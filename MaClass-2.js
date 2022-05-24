@@ -559,14 +559,16 @@ function PrayTimes(method) {
 	adjustHighLats: function(times) {
 		var params = setting;
 //bel		var nightTime = this.timeDiff(times.sunset, times.sunrise);
-//bel	
+/* //bel	
 		if (method == 'OneThirdth') {
 			var nightTime = this.timeDiff(times.sunset, times.fajr);}
 		else {
 			var nightTime = this.timeDiff(times.sunset, times.sunrise);
 		}
 
-//bel
+//bel */		
+		var nightTime = this.timeDiff(times.sunset, times.fajr);
+
 		times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
 		times.fajr  = this.adjustHLTime(times.fajr, times.sunrise, this.eval(params.fajr), nightTime, 'ccw');
 		times.isha  = this.adjustHLTime(times.isha, times.sunset, this.eval(params.isha), nightTime);
