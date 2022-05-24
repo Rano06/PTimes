@@ -333,7 +333,7 @@ function PrayTimes(method) {
 
 	// get default calc parametrs
 	getDefaults: function() { return methods; },
-
+		
 
 	// return prayer times for a given date
 	getTimes: function(date, coords, timezone, dst, format) {
@@ -559,8 +559,12 @@ function PrayTimes(method) {
 	adjustHighLats: function(times) {
 		var params = setting;
 //bel		var nightTime = this.timeDiff(times.sunset, times.sunrise);
-//bel		
-	var nightTime = this.timeDiff(times.sunset, times.fajr);
+//bel	
+		if (method == 'OneThirdth') {
+			var nightTime = this.timeDiff(times.sunset, times.fajr);}
+		else {
+			var nightTime = this.timeDiff(times.sunset, times.sunrise);
+		}
 //bel
 		times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
 		times.fajr  = this.adjustHLTime(times.fajr, times.sunrise, this.eval(params.fajr), nightTime, 'ccw');
