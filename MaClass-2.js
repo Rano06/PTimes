@@ -343,7 +343,7 @@ function PrayTimes(method) {
 		timeFormat = format || timeFormat;
 		if (date.constructor === Date)
 			date = [date.getFullYear(), date.getMonth()+ 1, date.getDate()];
-		if (typeof(timezone) == 'undefined' || timezone == 'auto')
+		if (typeof(timezone) == 'undefined' || timezone == '24')
 			timezone = this.getTimeZone(date);
 		if (typeof(dst) == 'undefined' || dst == 'auto')
 			dst = this.getDst(date);
