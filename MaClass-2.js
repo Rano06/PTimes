@@ -562,16 +562,16 @@ function PrayTimes(method) {
 //bel	
 		if (method == 'OneThirdth') {
 			var nightTime = this.timeDiff(times.sunset, times.fajr);}
-		var aa = 1/3 ;
+		var XX = 1/3 ;
 		else {
 			var nightTime = this.timeDiff(times.sunset, times.sunrise);
-			times.fajr  = this.adjustHLTime(times.fajr, times.sunrise, this.eval(params.fajr), nightTime, 'ccw');
-		var aa = 321 ;
+
+		var XX = 321 ;
 		}
-		alert (aa) ;
+		alert (XX) ;
 //bel
 		times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
-//fajr
+		times.fajr  = this.adjustHLTime(times.fajr, times.sunrise, this.eval(params.fajr), nightTime, 'ccw');
 		times.isha  = this.adjustHLTime(times.isha, times.sunset, this.eval(params.isha), nightTime);
 		times.maghrib = this.adjustHLTime(times.maghrib, times.sunset, this.eval(params.maghrib), nightTime);
 
