@@ -560,7 +560,7 @@ function PrayTimes(method) {
 		var params = setting;
 //bel		var nightTime = this.timeDiff(times.sunset, times.sunrise);
 //bel		
-	var nightTime = this.timeDiff(times.fajr, times.sunrise);
+	var nightTime = this.timeDiff(times.sunset, times.fajr);
 //bel
 		times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
 		times.fajr  = this.adjustHLTime(times.fajr, times.sunrise, this.eval(params.fajr), nightTime, 'ccw');
