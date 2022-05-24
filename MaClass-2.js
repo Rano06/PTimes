@@ -556,7 +556,7 @@ function PrayTimes(method) {
 
 
 	// adjust times for locations in higher latitudes
-	adjustHighLats: function(times,method) {
+	adjustHighLats: function(times) {
 		var params = setting;
 //bel		var nightTime = this.timeDiff(times.sunset, times.sunrise);
 //bel	
