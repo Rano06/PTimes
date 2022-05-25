@@ -598,7 +598,7 @@ console.log(Leyl) ;
 	// the night portion used for adjusting times in higher latitudes
 	nightPortion: function(angle, night) {
 		var method = setting.highLats;
-		var portion = 1/2 		// MidNight
+		var portion = 1/3 ;    		// 1/2 ; 	// MidNight
 		if (method == 'AngleBased')
 			portion = 1/60* angle;
 /*		
