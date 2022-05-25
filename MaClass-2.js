@@ -488,7 +488,7 @@ function PrayTimes(method) {
 		// add midnight time
 		times.midnight = (setting.midnight == 'Jafari') ?
 //bel				times.sunset+ this.timeDiff(times.sunset, times.fajr)/ 2 : 
-				times.sunset+ this.timeDiff(times.sunset, times.fajr)/ 3 :
+				times.sunset+ this.timeDiff(times.sunset, times.fajr)/ 5 :
 				times.sunset+ this.timeDiff(times.sunset, times.sunrise)/ 2;
 
 		times = this.tuneTimes(times);
