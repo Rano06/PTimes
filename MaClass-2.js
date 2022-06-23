@@ -613,6 +613,8 @@ console.log(Leyl) ;
 			portion = 2/11;	
 		if (method == 'OneFiveth')
 			portion = 1/5;	
+		if (method == 'OneFourth')
+			portion = 1/4;			
 		if (method == 'OneThirdth')
 			portion = 1/3;	
 		return portion* night;
