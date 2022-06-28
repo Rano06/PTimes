@@ -575,8 +575,10 @@ console.log(Leyl) ;
 //bel
 */
 		times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
+		
 		times.fajr  = this.adjustHLTime(times.fajr, times.sunrise, this.eval(params.fajr), nightTime, 'ccw');
 		times.isha  = this.adjustHLTime(times.isha, times.sunset, this.eval(params.isha), nightTime);
+		
 		times.maghrib = this.adjustHLTime(times.maghrib, times.sunset, this.eval(params.maghrib), nightTime);
 
 		return times;
@@ -593,8 +595,8 @@ console.log(Leyl) ;
 			if (isNaN(time) || timeDiff > portion)
 			time = base+ (direction == 'ccw' ? -portion : portion);
 //New	
-	if (method == 'AngleBased' && isNaN(time) || night > 8.52){
-		var portion = 8.52 * 1/60* angle ;
+	if (method == 'AngleBased' && isNaN(time) || night > 510){
+		var portion = 510 * 1/60 * angle ;
 		time = base+ (direction == 'ccw' ? -portion : portion);
 	}
 //New
