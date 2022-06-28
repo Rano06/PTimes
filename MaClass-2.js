@@ -591,11 +591,14 @@ console.log(Leyl) ;
 			this.timeDiff(base, time);
 		
 			if (isNaN(time) || timeDiff > portion)
-/*
-	if (method == 'AngleBased' && isNaN(time) || night > 510) ;	// 8.52 
-	else (isNaN(time) || timeDiff > portion)
-*/
 			time = base+ (direction == 'ccw' ? -portion : portion);
+//New	
+	if (method == 'AngleBased' && isNaN(time) || night > 8.52){
+		var portion = 8.52 * 1/60* angle ;
+		time = base+ (direction == 'ccw' ? -portion : portion);
+	}
+//New
+		
 		return time;
 	},
 
