@@ -620,8 +620,8 @@ console.log(Leyl) ;
 			portion = 1/7;
 		if (method == 'OneSixth')
 			portion = 1/6;	
-		if (method == 'OneFiveHalf')
-			portion = 2/11;	
+		if (method == 'TwoFiveth')
+			portion = 20/51;	
 		if (method == 'OneFiveth')
 			portion = 1/5;	
 		if (method == 'OneFourth')
