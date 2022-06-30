@@ -565,10 +565,11 @@ function PrayTimes(method) {
 //bel	
 		if (method == 'OneThirdth' || method == 'TwoFiveth') {
 			var nightTime = this.timeDiff(times.sunset, times.fajr);}
+		console.log (nightTime) ;
 		else {
 			var nightTime = this.timeDiff(times.sunset, times.sunrise);
 		}	
-console.log (nightTime) ;
+
 //bel
 
 		times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
