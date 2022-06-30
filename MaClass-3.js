@@ -559,21 +559,17 @@ function PrayTimes(method) {
 	// adjust times for locations in higher latitudes
 	adjustHighLats: function(times) {
 		var params = setting;
-		var nightTime = this.timeDiff(times.sunset, times.sunrise);
 		
-/*
+//		var nightTime = this.timeDiff(times.sunset, times.sunrise);
+		
 //bel	
-		if (method == 'OneThirdth') {
+		if (method == 'TwoFiveth') {
 			var nightTime = this.timeDiff(times.sunset, times.fajr);}
-var Leyl = 1/3 ;
 		else {
 			var nightTime = this.timeDiff(times.sunset, times.sunrise);
-var Leyl = 321 ;
-		}
-console.log(Leyl) ;
-		
+		}		
 //bel
-*/
+
 		times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
 		
 		times.fajr  = this.adjustHLTime(times.fajr, times.sunrise, this.eval(params.fajr), nightTime, 'ccw');
