@@ -79,7 +79,6 @@ function PrayTimes(method) {
 		midnight : 'Midnight'
 	},
 
-
 	// Calculation Methods
 	methods = {
 		MWL: {
@@ -137,7 +136,6 @@ function PrayTimes(method) {
 		Custom: {
 			name: 'Maliki, Shafi3i et Hanbali',
 			params: { fajr: 0, isha: 0 } },		
-			
 			
            	GenShafaqq: {
 			name: 'MoonSighting Committee Worldwide, Khalid Shaukat',
@@ -564,11 +562,11 @@ function PrayTimes(method) {
 		
 //bel	
 		if (method == 'OneThirdth' || method == 'TwoFiveth') {
-			var nightTime = this.timeDiff(times.sunset, times.fajr);}
-		console.log (nightTime) ;
-		else {
+			var nightTime = this.timeDiff(times.sunset, times.fajr);
+			console.log (nightTime) ;
+		} else {
 			var nightTime = this.timeDiff(times.sunset, times.sunrise);
-		}	
+			}	
 
 //bel
 
