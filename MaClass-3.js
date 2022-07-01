@@ -591,6 +591,10 @@ function PrayTimes(method) {
 		
 			if (isNaN(time) || timeDiff > portion)
 			time = base+ (direction == 'ccw' ? -portion : portion);
+		
+			if (method == 'AngleBased' && isNaN(time) || night < 8.52)
+			time = base+ (direction == 'ccw' ? -portion : portion);
+
 /* 
 //New ShortNight	
 	if (method == 'AngleBased' && isNaN(time) || night < 8.52){
