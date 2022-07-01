@@ -595,7 +595,7 @@ function PrayTimes(method) {
 //New ShortNight		
 			if (method == 'AngleBased' && isNaN(time) || night < 8.52){
 			var portion = night * 1/60 * angle ;
-		console.log(portion) ;
+		console.log(night +"   ;    "+ portion) ;
 			time = base+ (direction == 'ccw' ? -portion : portion);
 			}
 //New
