@@ -593,7 +593,7 @@ function PrayTimes(method) {
 			time = base+ (direction == 'ccw' ? -portion : portion);
 /* */ 
 //New ShortNight		
-			if (method == 'AngleBased' && isNaN(time) || night < 8.52){
+			if (method == 'NightBased' && isNaN(time) || night < 8.52){
 			var portion = night * 1/60 * angle ;
 		console.log(night +"   ;    "+ portion) ;
 			time = base+ (direction == 'ccw' ? -portion : portion);
@@ -611,10 +611,10 @@ function PrayTimes(method) {
 		var portion = 1/2 ;    		// 1/3 ; 	// MidNight
 		if (method == 'AngleBased')
 			portion = 1/60* angle;
-/*		
-                if (method == 'CosLat')
-			portion = DMath.cos(lat)* angle;		
-*/		
+		
+                if (method == 'NightBased')
+			portion = 1/60* angle;		
+		
 		if (method == 'OneSeventh')
 			portion = 1/7;
 		if (method == 'OneSixth')
