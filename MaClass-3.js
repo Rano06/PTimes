@@ -568,9 +568,9 @@ function PrayTimes(method) {
 		} else {
 			var nightTime = this.timeDiff(times.sunset, times.sunrise);
 			}	
-
 //bel
 */
+		
 		times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
 		
 		times.fajr  = this.adjustHLTime(times.fajr, times.sunrise, this.eval(params.fajr), nightTime, 'ccw');
@@ -594,8 +594,8 @@ function PrayTimes(method) {
 /* */ 
 //New ShortNight		
 			if (method == 'NightBased' && isNaN(time) || night < 8.52){
-			var portion = night * 1/60 * angle ;
-		console.log(night +"   ;    "+ portion) ;
+			var portion = 8.52 * 1/60 * angle ;
+		console.log(night +"   &&    "+ portion) ;
 			time = base+ (direction == 'ccw' ? -portion : portion);
 			}
 //New
