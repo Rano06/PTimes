@@ -171,7 +171,7 @@ function PrayTimes(method) {
 			params: { fajr: 16, isha: 14, maghrib: 4, midnight: 'Jafari' } },
 		Haraj: {
 			name: 'Haraj',
-			params: { midnight: 'Standard', isha: 13  } }
+			params: {fajr: 18, midnight: 'Standard', isha: 13  } }
 		
 	}, 
 	
