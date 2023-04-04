@@ -173,7 +173,7 @@ function PrayTimes(method) {
 			name: 'Haraj',
 			params: { midnight: 'Standard', isha: 13  } }
 		
-	},
+	}, 
 	
 
 	
