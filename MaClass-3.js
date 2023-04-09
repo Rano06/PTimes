@@ -112,6 +112,10 @@ function PrayTimes(method) {
 		BelCosLat: {
 			name: 'BelCosLat',
 			params: { fajr: 18, isha: 17 } },
+		
+		APBIF: {
+			name: 'APBIF',
+			params: { fajr: 18, isha: 12 } },
 			
 		ISNA_UOIF: {
 			name: 'ISNA & UOIF',
