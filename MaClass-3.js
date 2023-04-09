@@ -119,7 +119,7 @@ function PrayTimes(method) {
 			
 		ISNA_UOIF: {
 			name: 'ISNA & UOIF',
-			params: { fajr: 16, isha: 13 } },
+			params: { fajr: 15, isha: 12 } },
 			
 		UOIF: {
 			name: 'French Islamic Organization Union',
