@@ -114,7 +114,7 @@ function PrayTimes(method) {
 			params: { fajr: 18, isha: 17 } },
 		
 		APBIF: {
-			name: 'APBIF',
+			name: 'APBIF FRANCE',
 			params: { fajr: 18, isha: 12 } },
 			
 		ISNA_UOIF: {
