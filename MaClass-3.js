@@ -450,7 +450,7 @@ function PrayTimes(method) {
 
 		var imsak   = this.sunAngleTime(this.eval(params.imsak), times.imsak, 'ccw');
 		var fajr    = this.sunAngleTime(this.eval(params.fajr), times.fajr, 'ccw');
-		if (fajr < 3.75 || isNaN(fajr)) fajr = 3.75 ;
+		// if (fajr < 3.75 || isNaN(fajr)) fajr = 3.75 ;
 		var sunrise = this.sunAngleTime(this.riseSetAngle(), times.sunrise, 'ccw');
 /*
 //bel		
@@ -464,7 +464,7 @@ function PrayTimes(method) {
 		var sunset  = this.sunAngleTime(this.riseSetAngle(), times.sunset);;
 		var maghrib = this.sunAngleTime(this.eval(params.maghrib), times.maghrib);
 		var isha    = this.sunAngleTime(this.eval(params.isha), times.isha);
-		if (isha > 23.50 || isNaN(isha)) isha = 23.50 ;
+		// if (isha > 23.50 || isNaN(isha)) isha = 23.50 ;
 /*
 //bel	
 	var sunset0  = this.sunAngleTime(0.833, times.sunset);
