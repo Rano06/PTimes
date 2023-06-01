@@ -426,6 +426,9 @@ function PrayTimes(method) {
 		var decl = DMath.arcsin(DMath.sin(e)* DMath.sin(L));
 
 		return {declination: decl, equation: eqt};
+		
+		console.log(declination: decl, equation: eqt);
+		
 	},
 
 
