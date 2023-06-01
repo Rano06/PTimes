@@ -427,7 +427,7 @@ function PrayTimes(method) {
 
 		return {declination: decl, equation: eqt};
 		
-		console.log(declination: decl, equation: eqt);
+//		console.log(declination: decl, equation: eqt);
 		
 	},
 
@@ -466,8 +466,8 @@ function PrayTimes(method) {
 //bel
 */
 
-//		var FactNight = this.computeFactorNight(lat, decl, nightTime);
-		var FactNight = this.computeFactorNight: function(lat, this.sunPosition(jDate+ time).declination, this.timeDiff(times.sunset, times.sunrise)) {	
+		var FactNight = this.computeFactorNight(lat, decl, nightTime);
+//		var FactNight = this.computeFactorNight: function(lat, this.sunPosition(jDate+ time).declination, this.timeDiff(times.sunset, times.sunrise)) {	
 		
 		var dhuhr   = this.midDay(times.dhuhr);
 		var asr     = this.asrTime(this.asrFactor(params.asr), times.asr);
@@ -606,8 +606,8 @@ function PrayTimes(method) {
 // ======== DeclCosLat ========
 
 	// compute BelDecLat Factor FactNight BelRez
-//	computeFactorNight: function(lat, decl, nightTime) {
-	computeFactorNight: function(lat, this.sunPosition(jDate+ time).declination, this.timeDiff(times.sunset, times.sunrise)) {	
+	computeFactorNight: function(lat, decl, nightTime) {
+//	computeFactorNight: function(lat, this.sunPosition(jDate+ time).declination, this.timeDiff(times.sunset, times.sunrise)) {	
 		
 	var LAT = Math.abs(lat);
   	var RD = 3.14/180 ;
@@ -624,8 +624,8 @@ function PrayTimes(method) {
 	if ( isYearBisex ) { Juin21 += 1 ; An365 += 1 ; }
 
 	if ( lat < 0 ) {
-					DSY = DSY + Juin21 ;
-					if ( DSY > An365 ) { DSY = DSY - An365 ;}
+			DSY = DSY + Juin21 ;
+			if ( DSY > An365 ) { DSY = DSY - An365 ;}
 	}	
 		
 	
@@ -679,7 +679,7 @@ function PrayTimes(method) {
 */	
 
 	FactNight = FactNight.toFixed(3) ;
-
+alert (FactNight] ;
 	return FactNight;
 		
 	},	
