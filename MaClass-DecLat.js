@@ -249,6 +249,8 @@ function PrayTimes(method) {
 	//---------------------- Default Settings --------------------
 
 	calcMethod = 'MWL',
+	    
+	if ( calcMethod == 'CosDecLat' ) { var FactNight = this.computeFactorNight(lat, decl, nightTime);}
 
 	// do not change anything here; use adjust method instead
 	setting = {
@@ -679,7 +681,7 @@ function PrayTimes(method) {
 */	
 
 	FactNight = FactNight.toFixed(3) ;
-alert (FactNight] ;
+
 	return FactNight;
 		
 	},	
