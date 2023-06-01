@@ -463,7 +463,8 @@ function PrayTimes(method) {
 //bel
 */
 
-		var FactNight = this.computeFactorNight(lat, decl, nightTime);
+//		var FactNight = this.computeFactorNight(lat, decl, nightTime);
+		var FactNight = this.computeFactorNight(lat, decl, night);
 		
 		var dhuhr   = this.midDay(times.dhuhr);
 		var asr     = this.asrTime(this.asrFactor(params.asr), times.asr);
@@ -602,7 +603,7 @@ function PrayTimes(method) {
 // ======== DeclCosLat ========
 
 	// compute BelDecLat Factor FactNight BelRez
-	computeFactorNight: function(lat, decl, nightTime) {
+	computeFactorNight: function(lat, decl, night) {
 		
 	var LAT = Math.abs(lat);
   	var RD = 3.14/180 ;
@@ -641,11 +642,11 @@ function PrayTimes(method) {
   
 			if ( lat > 0 ) {
 							// FactNight = HourNight/10.34*Math.cos((54.5-lat)*RD)*Math.cos((23.45-SunDecl)*RD) ; 	
-							FactNight = nightTime/10.34*Math.cos((54.5-lat)*RD)*Math.cos((23.45-decl)*RD) ; 
+							FactNight = night/10.34*Math.cos((54.5-lat)*RD)*Math.cos((23.45-decl)*RD) ; 
 							// Math.cos((SunDecl-lat)*RD);	// (54.5-lat)
 					}else{
 							// FactNight = HourNight/10.34*Math.cos((-54.5-lat)*RD)*Math.cos((23.45-SunDecl)*RD) ;  
-							FactNight = nightTime/10.34*Math.cos((-54.5-lat)*RD)*Math.cos((23.45-decl)*RD) ;  
+							FactNight = night/10.34*Math.cos((-54.5-lat)*RD)*Math.cos((23.45-decl)*RD) ;  
 			}
   
 	if (FactNight > 1 ) FactNight = 1 ;
