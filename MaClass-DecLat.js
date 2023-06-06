@@ -590,7 +590,8 @@ function PrayTimes(method) {
 	
 		if (setting.midnight == 'Jafari') { 	
 			var nightTime = this.timeDiff(times.sunset, times.fajr);
-			console.log (nightTime) ;
+//			console.log (nightTime) ;
+			alert (nightTime) ;
 		} else {
 			var nightTime = this.timeDiff(times.sunset, times.sunrise);
 			}	
