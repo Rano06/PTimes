@@ -585,7 +585,7 @@ function PrayTimes(method) {
 //		var nightTime = this.timeDiff(times.sunset, times.fajr);
 		
 
-//bel	
+//bel 	Juridic MidNight / Civil MigNight
 	//	if (method == 'OneThirdth' || method == 'TwoFiveth') {
 	
 		if (setting.midnight == 'Jafari') { 	
