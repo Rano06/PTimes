@@ -598,10 +598,12 @@ function PrayTimes(method) {
 		var params = setting;
 		
 		var nightTime = this.timeDiff(times.sunset, times.sunrise);
-//		var nightTime = this.timeDiff(times.sunset, times.fajr);
-		
+	
 /*
 //bel 	Juridic MidNight / Civil MigNight
+
+//		var nightTime = this.timeDiff(times.sunset, times.fajr);
+
 	//	if (method == 'OneThirdth' || method == 'TwoFiveth') {
 	
 		//	if (setting.midnight == 'Jafari') { 
