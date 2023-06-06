@@ -83,7 +83,7 @@ function PrayTimes(method) {
 	methods = {
 		MWL: {
 			name: 'Muslim World League',
-			params: { fajr: 18, isha: 17 } },
+			params: { fajr: 18, isha: 17 }, midnight: 'Jafari' },
 
 		Egypt: {
 			name: 'Egyptian General Authority of Survey',
