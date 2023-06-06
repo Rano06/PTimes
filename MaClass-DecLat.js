@@ -582,18 +582,20 @@ function PrayTimes(method) {
 		var params = setting;
 		
 //		var nightTime = this.timeDiff(times.sunset, times.sunrise);
-		var nightTime = this.timeDiff(times.sunset, times.fajr);
+//		var nightTime = this.timeDiff(times.sunset, times.fajr);
 		
-/*
+
 //bel	
-		if (method == 'OneThirdth' || method == 'TwoFiveth') {
+	//	if (method == 'OneThirdth' || method == 'TwoFiveth') {
+	
+		if (setting.midnight == 'Jafari') { 	
 			var nightTime = this.timeDiff(times.sunset, times.fajr);
 			console.log (nightTime) ;
 		} else {
 			var nightTime = this.timeDiff(times.sunset, times.sunrise);
 			}	
 //bel
-*/
+
 		
 		times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
 		
