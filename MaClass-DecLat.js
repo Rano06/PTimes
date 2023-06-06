@@ -250,6 +250,8 @@ function PrayTimes(method) {
 
 	calcMethod = 'MWL',
 	    
+	var nightFactor = 1 ;
+	    
 	if ( calcMethod == 'CosDecLat' ) { var FactNight = this.computeFactorNight(lat, decl, nightTime);}
 
 	// do not change anything here; use adjust method instead
@@ -588,7 +590,8 @@ function PrayTimes(method) {
 //bel 	Juridic MidNight / Civil MigNight
 	//	if (method == 'OneThirdth' || method == 'TwoFiveth') {
 	
-		if (setting.midnight == 'Jafari') { 	
+		//	if (setting.midnight == 'Jafari') { 
+		if (nightFactor == 1) { 	
 			var nightTime = this.timeDiff(times.sunset, times.fajr);
 //			console.log (nightTime) ;
 			alert (nightTime) ;
