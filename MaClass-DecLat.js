@@ -250,7 +250,18 @@ function PrayTimes(method) {
 
 	calcMethod = 'MWL',
 	    
-	var nightFactor = 1 ;
+	nightFactor = 1 ;
+	
+	
+//bel 	Juridic MidNight / Civil MigNight
+
+		if (nightFactor == 1) { 	
+			var nightTime = this.timeDiff(times.sunset, times.fajr);
+			alert (nightTime) ;
+		} else {
+			var nightTime = this.timeDiff(times.sunset, times.sunrise);
+			}	
+//bel
 	    
 	if ( calcMethod == 'CosDecLat' ) { var FactNight = this.computeFactorNight(lat, decl, nightTime);}
 
@@ -583,10 +594,10 @@ function PrayTimes(method) {
 	adjustHighLats: function(times) {
 		var params = setting;
 		
-//		var nightTime = this.timeDiff(times.sunset, times.sunrise);
+		var nightTime = this.timeDiff(times.sunset, times.sunrise);
 //		var nightTime = this.timeDiff(times.sunset, times.fajr);
 		
-
+/*
 //bel 	Juridic MidNight / Civil MigNight
 	//	if (method == 'OneThirdth' || method == 'TwoFiveth') {
 	
@@ -599,7 +610,7 @@ function PrayTimes(method) {
 			var nightTime = this.timeDiff(times.sunset, times.sunrise);
 			}	
 //bel
-
+*/
 		
 		times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
 		
