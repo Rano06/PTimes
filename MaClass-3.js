@@ -85,8 +85,8 @@ function PrayTimes(method) {
 			name: 'Muslim World League',
 			params: { fajr: 18, isha: 17 } },
 		Malaysia : {
-			name: 'Indonesia, Malaysia Singapore',
-			params: { fajr: 20, isha: 16 } },
+			name: 'Indonesia, Malaysia & Singapore',
+			params: { fajr: 20, isha: 18 } },
 		Egypt: {
 			name: 'Egyptian General Authority of Survey',
 			params: { fajr: 19.5, isha: 17.5 } },
