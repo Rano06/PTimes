@@ -87,8 +87,8 @@ function PrayTimes(method) {
 		Malaysia : {
 			name: 'Indonesia, Malaysia & Singapore',
 			params: { fajr: 20, isha: 18 } },
-		DUBAI: {
-			name: 'DUBAI, United Arab Emirates',
+		Dubai: {
+			name: 'Dubai, United Arab Emirates',
 			params: { fajr: 18.2, isha: 18.2 } },
 		Egypt: {
 			name: 'Egyptian General Authority of Survey',
