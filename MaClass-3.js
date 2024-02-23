@@ -88,7 +88,9 @@ function PrayTimes(method) {
 		Egypt: {
 			name: 'Egyptian General Authority of Survey',
 			params: { fajr: 19.5, isha: 17.5 } },
-			
+		Maroc: {
+			name: 'Ministere du Habous, Maroc',
+			params: { fajr: 19, isha: 17 } },			
 		Makkah: {
 			name: 'Umm Al-Qura University, Makkah',
 			params: { fajr: 18.5, isha: '90 min' } },                              // fajr was 19 degrees before 1430 hijri
