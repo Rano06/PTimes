@@ -181,9 +181,12 @@ function PrayTimes(method) {
 		Jafari: {
 			name: 'Shia Ithna-Ashari, Leva Institute, Qum',
 			params: { fajr: 16, isha: 14, maghrib: 4, midnight: 'Jafari' } },
+		Haraj-0: {
+			name: 'Haraj',
+			params: {fajr: 18, midnight: 'Standard', isha: 13  } },
 		Haraj: {
 			name: 'Haraj',
-			params: {fajr: 18, midnight: 'Standard', isha: 13  } }
+			params: {fajr: 18, midnight: 'Standard', isha: 14  } }
 		
 	}, 
 	
