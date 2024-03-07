@@ -132,6 +132,9 @@ function PrayTimes(method) {
 		UOIF: {
 			name: 'French Islamic Organization Union',
 			params: { fajr: 12, isha: 12 } },
+		Bel1812: {
+			name: 'Bel1812',
+			params: { imsak: 18, fajr: 12, isha: 12 } },
 
         	GenShafaq: {
 			name: 'MoonSighting Committee Worldwide, Khalid Shaukat',
