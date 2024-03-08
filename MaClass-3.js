@@ -83,7 +83,7 @@ function PrayTimes(method) {
 	methods = {
 		MWL: {
 			name: 'Muslim World League',
-			params: { fajr: 18, isha: 17 } },
+			params: { fajr: 18, imsak: 18, isha: 17 } },
 		Malaysia : {
 			name: 'Indonesia, Malaysia & Singapore',
 			params: { fajr: 20, isha: 18 } },
@@ -187,10 +187,10 @@ function PrayTimes(method) {
 		
 		Haraj0: {
 			name: 'Haraj0',
-			params: {fajr: 18, midnight: 'Standard', isha: 13  } },
+			params: {fajr: 18, isha: 13  } },
 		Haraj: {
 			name: 'Haraj',
-			params: {fajr: 18, midnight: 'Standard', isha: 14  } }
+			params: {fajr: 18, isha: 14  } }
 		
 	}, 
 	
