@@ -134,7 +134,7 @@ function PrayTimes(method) {
 			params: { fajr: 12, isha: 12 } },
 		Bel1812: {
 			name: 'Bel1812',
-			params: { imsak: 18, fajr: 12, isha: 12 } },
+			params: { fajr: 18, imsak: 12, isha: 12 } },
 
         	GenShafaq: {
 			name: 'MoonSighting Committee Worldwide, Khalid Shaukat',
