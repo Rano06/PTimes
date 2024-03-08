@@ -264,7 +264,7 @@ function PrayTimes(method) {
 	// do not change anything here; use adjust method instead
 	setting = {
 //		imsak    : '10 min',
-		imsak    : '20 min' ,
+		imsak    : '0 min' ,
 		dhuhr    : '0 min',
 		asr      : 'Standard',
 		highLats : 'NightMiddle'
