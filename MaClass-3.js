@@ -466,7 +466,7 @@ function PrayTimes(method) {
 
 		var imsak   = this.sunAngleTime(this.eval(params.imsak), times.imsak, 'ccw');
 		var fajr    = this.sunAngleTime(this.eval(params.fajr), times.fajr, 'ccw');
-		// if (fajr < 3.75 || isNaN(fajr)) fajr = 3.75 ;
+			 if (fajr < 3.75 || isNaN(fajr)) fajr = 3.75 ;
 		var sunrise = this.sunAngleTime(this.riseSetAngle(), times.sunrise, 'ccw');
 /*
 //bel		
