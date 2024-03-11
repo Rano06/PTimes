@@ -215,7 +215,7 @@ function PrayTimes(method) {
 
 	// Default Parameters in Calculation Methods
 	defaultParams = {
-		maghrib: '0 min', midnight: 'Standard'
+		maghrib: '0 min', midnight: 'Standard', imsak : 20 ,
 
 	},
 
@@ -260,7 +260,6 @@ function PrayTimes(method) {
 	//---------------------- Default Settings --------------------
 
 	calcMethod = 'MWL',
-	params.imsak : 20 ,
 
 	// do not change anything here; use adjust method instead
 	setting = {
