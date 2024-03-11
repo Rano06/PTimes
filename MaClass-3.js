@@ -260,6 +260,7 @@ function PrayTimes(method) {
 	//---------------------- Default Settings --------------------
 
 	calcMethod = 'MWL',
+	params.imsak = 20 ,
 
 	// do not change anything here; use adjust method instead
 	setting = {
