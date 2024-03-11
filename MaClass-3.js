@@ -83,7 +83,7 @@ function PrayTimes(method) {
 	methods = {
 		MWL: {
 			name: 'Muslim World League',
-			params: { fajr: 18, imsak: 18, isha: 17 } },
+			params: { fajr: 18, isha: 17 } },
 		Malaysia : {
 			name: 'Indonesia, Malaysia & Singapore',
 			params: { fajr: 20, isha: 18 } },
@@ -134,7 +134,7 @@ function PrayTimes(method) {
 			params: { fajr: 12, isha: 12 } },
 		Bel1812: {
 			name: 'Bel1812',
-			params: { fajr: 18, imsak: 12, isha: 12 } },
+			params: { fajr: 18, isha: 12 } },
 
         	GenShafaq: {
 			name: 'MoonSighting Committee Worldwide, Khalid Shaukat',
