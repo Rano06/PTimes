@@ -215,7 +215,7 @@ function PrayTimes(method) {
 
 	// Default Parameters in Calculation Methods
 	defaultParams = {
-		maghrib: '0 min', midnight: 'Standard', imsak: 20
+		maghrib: '0 min', midnight: 'Standard'
 // if (params.fajr > 18) { params.imsak = params.fajr }
 	},
 
