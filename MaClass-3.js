@@ -81,6 +81,7 @@ function PrayTimes(method) {
 
 	// Calculation Methods
 	methods = {
+		
 		MWL: {
 			name: 'Muslim World League',
 			params: { fajr: 18, isha: 17 } },
@@ -191,7 +192,7 @@ function PrayTimes(method) {
 		Haraj: {
 			name: 'Haraj',
 			params: {fajr: 18, isha: 14  } }
-		
+				
 	}, 
 	
 
@@ -216,7 +217,7 @@ function PrayTimes(method) {
 	// Default Parameters in Calculation Methods
 	defaultParams = {
 		maghrib: '0 min', midnight: 'Standard'
-// if (params.fajr > 18) { params.imsak = params.fajr }
+
 	},
 
 
@@ -264,7 +265,6 @@ function PrayTimes(method) {
 	// do not change anything here; use adjust method instead
 	setting = {
 		imsak    : '10 min',
-//		imsak    : '0 min',
 		dhuhr    : '0 min',
 		asr      : 'Standard',
 		highLats : 'NightMiddle'
@@ -466,7 +466,7 @@ function PrayTimes(method) {
 
 		var imsak   = this.sunAngleTime(this.eval(params.imsak), times.imsak, 'ccw');
 		var fajr    = this.sunAngleTime(this.eval(params.fajr), times.fajr, 'ccw');
-			 if (fajr < 3.75 || isNaN(fajr)) fajr = 3.75 ;
+		// if (fajr < 3.75 || isNaN(fajr)) fajr = 3.75 ;
 		var sunrise = this.sunAngleTime(this.riseSetAngle(), times.sunrise, 'ccw');
 /*
 //bel		
