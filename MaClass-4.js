@@ -81,14 +81,23 @@ function PrayTimes(method) {
 
 	// Calculation Methods
 	methods = {
+		
 		MWL: {
 			name: 'Muslim World League',
 			params: { fajr: 18, isha: 17 } },
-
+		Malaysia : {
+			name: 'Indonesia, Malaysia & Singapore',
+			params: { fajr: 20, isha: 18 } },
+		Dubai: {
+			name: 'Dubai, United Arab Emirates',
+			params: { fajr: 18.2, isha: 18.2 } },
 		Egypt: {
 			name: 'Egyptian General Authority of Survey',
 			params: { fajr: 19.5, isha: 17.5 } },
-			
+		Maroc: {
+			name: 'Ministere du Habous, Maroc',
+			params: { fajr: 19, isha: 17 } },
+	
 		Makkah: {
 			name: 'Umm Al-Qura University, Makkah',
 			params: { fajr: 18.5, isha: '90 min' } },                              // fajr was 19 degrees before 1430 hijri
@@ -112,6 +121,10 @@ function PrayTimes(method) {
 		BelCosLat: {
 			name: 'BelCosLat',
 			params: { fajr: 18, isha: 17 } },
+		
+		APBIF: {
+			name: 'APBIF FRANCE',
+			params: { fajr: 18, isha: 12 } },
 			
 		ISNA_UOIF: {
 			name: 'ISNA & UOIF',
@@ -120,6 +133,9 @@ function PrayTimes(method) {
 		UOIF: {
 			name: 'French Islamic Organization Union',
 			params: { fajr: 12, isha: 12 } },
+		Bel1812: {
+			name: 'Bel1812',
+			params: { fajr: 18, isha: 12 } },
 
         	GenShafaq: {
 			name: 'MoonSighting Committee Worldwide, Khalid Shaukat',
@@ -169,22 +185,14 @@ function PrayTimes(method) {
 		Jafari: {
 			name: 'Shia Ithna-Ashari, Leva Institute, Qum',
 			params: { fajr: 16, isha: 14, maghrib: 4, midnight: 'Jafari' } },
-
-
-		APBIF: {
-			name: 'APBIF FRANCE',
-			params: { fajr: 18, isha: 12 } },	
 		
+		Haraj0: {
+			name: 'Haraj0',
+			params: {fajr: 18, isha: 13  } },
 		Haraj: {
 			name: 'Haraj',
-			params: {fajr: 18, midnight: 'Standard', isha: 13  } },
-		Asfar: {
-			name: 'Asfar',
-			params: {fajr: 18, midnight: 'Standard', isha: 13  } },
-		Ahmar: {			
-			name: 'Ahmar',
-			params: {fajr: 18, midnight: 'Standard', isha: 14  } }
-		
+			params: {fajr: 18, isha: 14  } }
+				
 	}, 
 	
 
